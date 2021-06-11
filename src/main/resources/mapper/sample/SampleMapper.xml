@@ -1,0 +1,32 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.ensmart.frameworkdemo.app.dao.sample.SampleMapper">
+	<select id="selectAllSampleList" resultType="sample">
+		/* TestMapper.selectAllTestList */
+		select
+			id,
+			name,
+			description,
+			sys_reg_dtime,
+			sys_regr_id,
+			sys_mod_dtime,
+			sys_modr_id
+		from sample
+	</select>
+
+	<select id="selectSampleById" parameterType="int" resultType="sample">
+		/* TestMapper.selectSampleById */
+		select
+			id,
+			name,
+			description,
+			sys_reg_dtime,
+			sys_regr_id,
+			sys_mod_dtime,
+			sys_modr_id
+		from sample
+		where id = #{id}
+	</select>
+</mapper>
