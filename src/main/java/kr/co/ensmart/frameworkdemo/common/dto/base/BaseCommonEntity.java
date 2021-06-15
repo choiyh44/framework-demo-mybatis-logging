@@ -10,7 +10,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class BaseEntity implements Serializable {
+public class BaseCommonEntity implements Serializable {
 	private static final long serialVersionUID = 8553799789863519137L;
 
 	private Timestamp sysRegDtime;
