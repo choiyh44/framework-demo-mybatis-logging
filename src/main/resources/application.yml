@@ -25,10 +25,10 @@ spring:
   profiles: local
 
   datasource:
-    #url: jdbc:postgresql://localhost:5432/postgres?currentSchema=x2commerce
-    url: jdbc:log4jdbc:postgresql://localhost:5432/postgres?currentSchema=x2commerce
-    #driver-class-name: org.postgresql.Driver
-    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=x2commerce
+    #url: jdbc:log4jdbc:postgresql://localhost:5432/postgres?currentSchema=x2commerce
+    driver-class-name: org.postgresql.Driver
+    #driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     username: x2commerce
     password: x2commerce123!
     hikari:
