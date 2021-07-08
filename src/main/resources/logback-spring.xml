@@ -43,7 +43,7 @@
 			<appender-ref ref="COLOR_STDOUT" />
 		</logger>
 		 
-		<root level="info">
+		<root level="debug">
 			<appender-ref ref="COLOR_STDOUT" />
 		</root>
 	</springProfile>
